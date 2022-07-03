@@ -1,0 +1,57 @@
+@use "sass:math";
+
+body {
+    font-family: 'Martel', serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    margin: 0 auto;
+    width: math.div(1045px, 1443px)*100%;
+    max-width: 1045px;
+}
+
+a {
+    font-family: 'OpenSans', serif;
+}
+
+button {
+    font-family: 'OpenSans', serif;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.header__button {
+    line-height: 0;
+    font-size: 0;
+}
+
+.section-heading {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #252B42;
+}
+
+.section-description {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: math.div(450px, 1045px) * 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #737373;
+}
+
+@media (max-width:1200px) {
+    .container {
+        width: 86%;
+    }
+}
